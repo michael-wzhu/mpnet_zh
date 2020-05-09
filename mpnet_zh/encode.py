@@ -6,7 +6,9 @@ import os
 from collections import Counter
 from multiprocessing import Pool
 
-from transformers import BertTokenizer
+import sys
+sys.path.append("./")
+from mpnet_zh.tokenization_bert import BertTokenizer
 
 
 def main():
@@ -31,7 +33,7 @@ def main():
     parser.add_argument("--workers", type=int, default=60)
     args = parser.parse_args()
 
-    # python mpnet_zh/encode.py --inputs
+
 
     assert len(args.inputs) == len(args.outputs), \
         "number of input and output paths should match"
@@ -107,3 +109,5 @@ class MultiprocessingEncoder(object):
 
 if __name__ == "__main__":
     main()
+
+    # python mpnet_zh/encode.py --inputs datasets/zh_sample/wiki.valid.raw --outputs experiments/zh_sample/wiki.valid.bpe --keep-empty --workers 2
