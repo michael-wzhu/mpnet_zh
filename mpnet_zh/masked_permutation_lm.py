@@ -7,12 +7,6 @@ import os
 import numpy as np
 import torch
 
-import sys
-
-
-
-sys.path.append("/usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/")
-
 from fairseq.data import (
     data_utils,
     Dictionary,

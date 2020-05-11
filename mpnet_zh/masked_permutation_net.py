@@ -8,9 +8,6 @@ import torch.nn.functional as F
 
 from typing import List
 
-import sys
-sys.path.append("/usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/")
-
 from fairseq import utils
 from fairseq.models.roberta import (
     RobertaModel, 
