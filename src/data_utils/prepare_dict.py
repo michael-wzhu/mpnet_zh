@@ -4,8 +4,8 @@
 
 if __name__ == "__main__":
 
-    from_dir = "mpnet_zh/vocab.txt"
-    to_dir = "mpnet_zh/dict.txt"
+    from_dir = "src/vocab.txt"
+    to_dir = "src/dict.txt"
     with open(from_dir, "r", encoding="utf-8") as f_in:
         with open(to_dir, "w", encoding="utf-8") as f_out:
             count = 0
