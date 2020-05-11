@@ -52,8 +52,8 @@ fairseq-preprocess \
 ### 2) Pre-train MPNet
 The below command is to train a MPNet model:
 ```
-TOTAL_UPDATES=125000    # Total number of training steps
-WARMUP_UPDATES=10000    # Warmup the learning rate over this many updates
+TOTAL_UPDATES=125    # Total number of training steps
+WARMUP_UPDATES=100    # Warmup the learning rate over this many updates
 PEAK_LR=0.0005          # Peak learning rate, adjust as needed
 TOKENS_PER_SAMPLE=512   # Max sequence length
 MAX_POSITIONS=512       # Num. positional embeddings (usually same as above)
