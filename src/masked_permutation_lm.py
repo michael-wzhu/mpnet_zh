@@ -22,7 +22,7 @@ from fairseq.data import (
 )
 from fairseq.tasks import FairseqTask, register_task
 # from fairseq.data.permutation_utils import make_span_perm
-from mpnet_zh.permutation_utils import make_span_perm
+from src.permutation_utils import make_span_perm
 
 
 @register_task('masked_permutation_lm')

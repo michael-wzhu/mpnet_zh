@@ -8,7 +8,7 @@ from multiprocessing import Pool
 
 import sys
 sys.path.append("./")
-from mpnet_zh.tokenization_bert import BertTokenizer
+from src.tokenization_bert import BertTokenizer
 
 
 def main():

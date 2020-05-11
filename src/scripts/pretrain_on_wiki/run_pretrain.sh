@@ -13,7 +13,7 @@ UPDATE_FREQ=16          # Increase the batch size 16x
 
 
 DATA_DIR=data-bin/zh_wiki
-USER_DIR=./mpnet_zh
+USER_DIR=./mpnet_zh/src
 
 python3 /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
     --fp16 --user-dir $USER_DIR \
