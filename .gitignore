@@ -12,6 +12,7 @@ experiments/*
 datasets/*
 *.txt
 data-bin/*
+tmp/*
 
 # Distribution / packaging
 .Python
