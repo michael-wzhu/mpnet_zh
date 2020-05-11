@@ -2,9 +2,6 @@
 
 ### run pretrain
 
-export STORAGE_BUCKET=gs://sbt0
-# export TPU_NAME=grpc://10.176.102.186:8470
-export TPU_NAME=h-bert-2
 
 TOTAL_UPDATES=125000    # Total number of training steps
 WARMUP_UPDATES=10000    # Warmup the learning rate over this many updates
