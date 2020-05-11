@@ -24,7 +24,7 @@ python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
     --optimizer adam \
     --adam-betas '(0.9,0.98)' \
     --adam-eps 1e-6 \
-    --clip-norm 1.0 \
+    --clip-norm 0.0 \
     --lr-scheduler polynomial_decay \
     --lr $PEAK_LR \
     --warmup-updates $WARMUP_UPDATES \
@@ -34,7 +34,8 @@ python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
     --weight-decay 0.01 \
     --update-freq $UPDATE_FREQ \
     --max-update $TOTAL_UPDATES \
-    --log-format simple --log-interval 1 \
+    --log-format simple \
+    --log_steps=30 \
     --input-mode 'mpnet' \
     --input_shapes 16x512 18x480 21x384 \
     --valid-subset=valid \
