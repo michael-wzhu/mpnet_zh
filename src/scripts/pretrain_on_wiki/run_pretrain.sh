@@ -26,3 +26,9 @@ python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
     --dropout 0.1 --attention-dropout 0.1 --weight-decay 0.01 \
     --max-sentences $MAX_SENTENCES --update-freq $UPDATE_FREQ \
     --max-update $TOTAL_UPDATES --log-format simple --log-interval 1 --input-mode 'mpnet'
+    --input_shapes 16x512 18x480 21x384 \
+    --valid-subset=valid \
+    --train-subset=train \
+    --num_cores=8 \
+    --save-dir=checkpoints/zh_wiki_tryout \
+    --skip-invalid-size-inputs-valid-test
