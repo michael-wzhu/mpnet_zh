@@ -16,7 +16,6 @@ DATA_DIR=data-bin/zh_wiki
 USER_DIR=src
 
 python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
-    --fp16 \
     --task masked_permutation_lm \
     --criterion masked_permutation_cross_entropy \
     --arch mpnet_base --sample-break-mode complete --tokens-per-sample $TOKENS_PER_SAMPLE \
