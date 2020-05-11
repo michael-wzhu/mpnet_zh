@@ -15,7 +15,7 @@ UPDATE_FREQ=16          # Increase the batch size 16x
 DATA_DIR=data-bin/zh_wiki
 USER_DIR=mpnet_zh/src
 
-python3 train.py $DATA_DIR \
+python train.py $DATA_DIR \
     --fp16 --user-dir $USER_DIR \
     --task masked_permutation_lm \
     --criterion masked_permutation_cross_entropy \
