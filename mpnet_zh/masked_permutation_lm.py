@@ -7,6 +7,12 @@ import os
 import numpy as np
 import torch
 
+import sys
+
+
+
+sys.path.append("/usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/")
+
 from fairseq.data import (
     data_utils,
     Dictionary,
@@ -21,7 +27,8 @@ from fairseq.data import (
     TokenBlockDataset,
 )
 from fairseq.tasks import FairseqTask, register_task
-from fairseq.data.permutation_utils import make_span_perm
+# from fairseq.data.permutation_utils import make_span_perm
+from mpnet_zh.permutation_utils import make_span_perm
 
 
 @register_task('masked_permutation_lm')
