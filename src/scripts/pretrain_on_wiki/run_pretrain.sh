@@ -13,10 +13,10 @@ UPDATE_FREQ=16          # Increase the batch size 16x
 
 
 DATA_DIR=data-bin/zh_wiki
-USER_DIR=mpnet_zh/src
+USER_DIR=src
 
-python train.py $DATA_DIR \
-    --fp16 --user-dir $USER_DIR \
+python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
+    --fp16 \
     --task masked_permutation_lm \
     --criterion masked_permutation_cross_entropy \
     --arch mpnet_base --sample-break-mode complete --tokens-per-sample $TOKENS_PER_SAMPLE \
