@@ -10,7 +10,7 @@ __pycache__/
 .idea/*
 experiments/*
 datasets/*
-
+*.txt
 data-bin/*
 tmp/*
 
