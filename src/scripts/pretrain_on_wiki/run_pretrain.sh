@@ -28,7 +28,8 @@ python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
     --lr $PEAK_LR \
     --warmup-updates $WARMUP_UPDATES \
     --total-num-update $TOTAL_UPDATES \
-    --dropout 0.1 --attention-dropout 0.1 \
+    --dropout 0.1 \
+    --attention-dropout 0.1 \
     --weight-decay 0.01 \
     --update-freq $UPDATE_FREQ \
     --max-update $TOTAL_UPDATES \
@@ -39,4 +40,6 @@ python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
     --train-subset=train \
     --num_cores=8 \
     --save-dir=checkpoints/zh_wiki_tryout \
-    --skip-invalid-size-inputs-valid-test
+    --skip-invalid-size-inputs-valid-test \
+    --use_relative_positions 
+
