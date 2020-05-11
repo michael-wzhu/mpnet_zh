@@ -2,7 +2,7 @@ i# Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT License.
 #
 
-mport numpy as np
+import numpy as np
 
 cimport cython
 cimport numpy as np

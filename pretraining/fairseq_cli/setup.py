@@ -60,6 +60,13 @@ extensions = [
         language='c++',
         extra_compile_args=extra_compile_args,
     ),
+    NumpyExtension(
+        'fairseq.data.permutation_utils',
+        sources=['fairseq/data/permutation_utils.pyx'],
+        language='c++',
+        extra_compile_args=extra_compile_args,
+    ),
+
 ]
 
 
