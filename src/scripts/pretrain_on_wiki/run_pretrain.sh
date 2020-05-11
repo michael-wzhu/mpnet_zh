@@ -23,7 +23,8 @@ python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
     --tokens-per-sample $TOKENS_PER_SAMPLE \
     --optimizer adam \
     --adam-betas '(0.9,0.98)' \
-    --adam-eps 1e-6 --clip-norm 0.0 \
+    --adam-eps 1e-6 \
+    --clip-norm 1.0 \
     --lr-scheduler polynomial_decay \
     --lr $PEAK_LR \
     --warmup-updates $WARMUP_UPDATES \
@@ -40,6 +41,5 @@ python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
     --train-subset=train \
     --num_cores=8 \
     --save-dir=checkpoints/zh_wiki_tryout \
-    --skip-invalid-size-inputs-valid-test \
     --use-relative-positions
 
