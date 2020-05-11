@@ -41,5 +41,5 @@ python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
     --num_cores=8 \
     --save-dir=checkpoints/zh_wiki_tryout \
     --skip-invalid-size-inputs-valid-test \
-    --use_relative_positions 
+    --use-relative-positions
 
