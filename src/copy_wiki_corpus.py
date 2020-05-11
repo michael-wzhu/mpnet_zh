@@ -21,12 +21,12 @@ if __name__ == "__main__":
             "data/corpus/%s/zhwiki-latest-pages-articles_%s.txt" % (prefix, prefix)
         )
         input_dir_local = "./zhwiki-latest-pages-articles_%s.txt" % prefix
-        tf.io.Copy(input_dir_gs, input_dir_local, overwrite=True)
+        tf.io.gfile.copy(input_dir_gs, input_dir_local, overwrite=True)
 
         input_dir_gs = os.path.join(
             STORAGE_BUCKET,
             "data/corpus/%s/zhwiki-latest-pages-articles_110_%s.txt" % (prefix, prefix)
         )
         input_dir_local = "./zhwiki-latest-pages-articles_110_%s.txt" % prefix
-        tf.io.Copy(input_dir_gs, input_dir_local, overwrite=True)
+        tf.io.gfile.copy(input_dir_gs, input_dir_local, overwrite=True)
 
