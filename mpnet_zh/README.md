@@ -21,6 +21,10 @@ fairseq-preprocess \
     --testpref wikitext-103-raw/wiki.test.bpe \
     --destdir data-bin/wikitext-103 \
     --workers 60
+
+python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/preprocess.py --only-source --srcdict mpnet_zh/dict.txt --trainpref ./experiments/zh_wiki/zhwiki-latest-pages-articles_char_no_space_lower_simplified.txt.bpe --validpref ./experiments/zh_wiki/zhwiki-latest-pages-articles_110_char_no_space_lower_simplified.txt.bpe --testpref ./experiments/zh_wiki/zhwiki-latest-pages-articles_110_char_no_space_lower_simplified.txt.bpe --destdir data-bin/zh_wiki --workers 4
+
+
 ```
 
 ### 2) Pre-train MPNet
