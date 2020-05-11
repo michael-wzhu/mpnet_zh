@@ -11,6 +11,7 @@ __pycache__/
 experiments/*
 datasets/*
 *.txt
+data-bin/*
 
 # Distribution / packaging
 .Python
