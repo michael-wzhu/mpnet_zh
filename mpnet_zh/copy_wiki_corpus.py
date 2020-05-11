@@ -6,7 +6,8 @@ if __name__ == "__main__":
 
     prefixes = [
         # "char_spaced_lower",
-        "char_no_space_lower",
+        # "char_no_space_lower",
+        "char_no_space_lower_simplified",
         # "subchar_spaced_lower",
         # "subchar_no_space_lower",
         # "subchar_segmented_lower",
