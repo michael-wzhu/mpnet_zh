@@ -21,8 +21,8 @@ from fairseq.data import (
     TokenBlockDataset,
 )
 from fairseq.tasks import FairseqTask, register_task
-# from fairseq.data.permutation_utils import make_span_perm
-from fairseq import make_span_perm
+from fairseq.data.permutation_utils import make_span_perm
+# from fairseq import make_span_perm
 
 
 @register_task('masked_permutation_lm')
