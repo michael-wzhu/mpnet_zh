@@ -34,13 +34,16 @@ python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
     --weight-decay 0.01 \
     --update-freq $UPDATE_FREQ \
     --max-update $TOTAL_UPDATES \
-    --log-format simple \
-    --log_steps=1 \
+    --log-format json \
+    --log-interval=2 \
     --input-mode 'mpnet' \
     --input_shapes 16x512 18x480 21x384 \
     --valid-subset=valid \
     --train-subset=train \
     --num_cores=8 \
+    --metrics_debug \
     --save-dir=checkpoints/zh_wiki_tryout \
-    --use-relative-positions
+    --use-relative-positions \
+    --encoder-normalize-before \
+    --normalize-before
 
