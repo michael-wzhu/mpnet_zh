@@ -44,6 +44,5 @@ python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
     --metrics_debug \
     --save-dir=checkpoints/zh_wiki_tryout \
     --use-relative-positions \
-    --encoder-normalize-before \
-    --normalize-before
+    --encoder-normalize-before
 
