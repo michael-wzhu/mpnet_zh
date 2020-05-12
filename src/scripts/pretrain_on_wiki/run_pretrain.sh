@@ -35,7 +35,7 @@ python /usr/share/torch-xla-1.5/tpu-examples/deps/fairseq/train.py $DATA_DIR \
     --update-freq $UPDATE_FREQ \
     --max-update $TOTAL_UPDATES \
     --log-format simple \
-    --log_steps=30 \
+    --log_steps=1 \
     --input-mode 'mpnet' \
     --input_shapes 16x512 18x480 21x384 \
     --valid-subset=valid \
